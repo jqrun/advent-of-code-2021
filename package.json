@@ -1,0 +1,24 @@
+{
+  "name": "advent-of-code-2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ts-node": "ts-node",
+    "day-1": "ts-node ./src/day-1-sonar-sweep.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jqrun/advent-of-code-2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jqrun/advent-of-code-2021/issues"
+  },
+  "homepage": "https://github.com/jqrun/advent-of-code-2021#readme",
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
