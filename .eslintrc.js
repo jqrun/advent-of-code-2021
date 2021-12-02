@@ -8,7 +8,7 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    'prettier/prettier': ['error', { singleQuote: true }],
+    '@typescript-eslint/explicit-function-return-type': ['error'],
   },
   env: {
     node: true,

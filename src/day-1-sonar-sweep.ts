@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 
-function getNumIncreases(measurements: number[]) {
+function getNumIncreases(measurements: number[]): number {
   if (measurements.length < 2) return 0;
 
   let increases = 0;
@@ -14,7 +14,7 @@ function getNumIncreases(measurements: number[]) {
   return increases;
 }
 
-function getNumSlidingWindowIncreases(measurements: number[]) {
+function getNumSlidingWindowIncreases(measurements: number[]): number {
   if (measurements.length < 4) return 0;
 
   let increases = 0;
@@ -37,5 +37,8 @@ const puzzleInput = readFileSync('./src/day-1-sonar-sweep-input.txt', 'utf-8')
   .map(Number);
 console.log('Part 1 Puzzle input: ', getNumIncreases(puzzleInput));
 
-console.log('Part 2 Example input: ', getNumSlidingWindowIncreases(exampleInput));
+console.log(
+  'Part 2 Example input: ',
+  getNumSlidingWindowIncreases(exampleInput)
+);
 console.log('Part 2 Puzzle input: ', getNumSlidingWindowIncreases(puzzleInput));

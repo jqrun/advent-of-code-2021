@@ -15,5 +15,5 @@ This is just utilizing `ts-node` to run TypeScript files. See `package.json` for
 Example:
 
 ```bash
-npm run day-1
+npm run ts-node ./src/day-1-sonar-sweep.ts
 ```
