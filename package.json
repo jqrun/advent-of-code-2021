@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ts-node": "ts-node",
-    "day-1": "ts-node ./src/day-1-sonar-sweep.ts"
+    "ts-node": "ts-node"
   },
   "repository": {
     "type": "git",
