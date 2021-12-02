@@ -29,10 +29,12 @@ function getNumSlidingWindowIncreases(measurements: number[]): number {
   return increases;
 }
 
-const exampleInput = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
-const puzzleInput = readFileSync('./src/day-1-sonar-sweep-input.txt', 'utf-8')
-  .split(/\s/)
-  .map(Number);
+function parseFile(path: string): number[] {
+  return readFileSync(path, 'utf-8').split(/\s/).map(Number);
+}
+
+const exampleInput = parseFile('./src/day-1/example.txt');
+const puzzleInput = parseFile('./src/day-1/puzzle.txt');
 
 console.log('Part 1 Example input: ', getNumIncreases(exampleInput));
 console.log('Part 1 Puzzle input: ', getNumIncreases(puzzleInput));

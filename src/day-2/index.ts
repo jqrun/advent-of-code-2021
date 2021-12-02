@@ -49,19 +49,15 @@ function getPositionWithAim(moves: string[]): {
   return { horizontal, depth, multiplied: horizontal * depth };
 }
 
-const exampleInput = `
-forward 5
-down 5
-forward 8
-up 3
-down 8
-forward 2`
-  .trim()
-  .split('\n');
-const puzzleInput = readFileSync('./src/day-2-dive-input.txt', 'utf-8').split('\n');
+function parseFile(path: string): string[] {
+  return readFileSync(path, 'utf-8').split('\n');
+}
 
-console.log('Part 1 example input: ', getPosition(exampleInput));
-console.log('Part 1 puzzle input: ', getPosition(puzzleInput));
+const exampleInput = parseFile('./src/day-2/example.txt');
+const puzzleInput = parseFile('./src/day-2/puzzle.txt');
 
-console.log('Part 2 example input: ', getPositionWithAim(exampleInput));
-console.log('Part 2 puzzle input: ', getPositionWithAim(puzzleInput));
+console.log('Part 1 Example input: ', getPosition(exampleInput));
+console.log('Part 1 Puzzle input: ', getPosition(puzzleInput));
+
+console.log('Part 2 Example input: ', getPositionWithAim(exampleInput));
+console.log('Part 2 Puzzle input: ', getPositionWithAim(puzzleInput));

@@ -5,7 +5,7 @@ https://adventofcode.com/2021
 ## Setup
 
 ```bash
-npm install
+yarn
 ```
 
 ## Usage
@@ -15,5 +15,5 @@ This is just utilizing `ts-node` to run TypeScript files. See `package.json` for
 Example:
 
 ```bash
-npm run ts-node ./src/day-1-sonar-sweep.ts
+yarn ts-node ./src/day-1
 ```
