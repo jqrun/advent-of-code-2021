@@ -23,13 +23,13 @@ function getLifeSupportRating(report: number[][]): {
   co2: number;
   lifeSupport: number;
 } {
-  const oxygenNumbers = reduceByCommnality(report, true);
-  const co2Numbers = reduceByCommnality(report, false);
+  const oxygenNumbers = reduceByCommonality(report, true);
+  const co2Numbers = reduceByCommonality(report, false);
   const [oxygen, co2] = [oxygenNumbers, co2Numbers].map((x) => parseInt(x.join(''), 2));
   return { oxygen, co2, lifeSupport: oxygen * co2 };
 }
 
-function reduceByCommnality(report: number[][], mostCommon = true): number[] {
+function reduceByCommonality(report: number[][], mostCommon = true): number[] {
   let numbers = report.slice(0);
 
   let i = 0;
