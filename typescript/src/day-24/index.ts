@@ -1,5 +1,11 @@
 import { writeFileSync, readFileSync } from 'fs';
 
+/**
+ * This one was ultimatley solved by hand and not progrmatticaly.
+ * I used hints for this one! And most credit goes to this post:
+ * https://www.reddit.com/r/adventofcode/comments/rom5l5/2021_day_24pen_paper_monad_deparsed/
+ */
+
 type Variable = 'w' | 'x' | 'y' | 'z';
 
 type Command = 'inp' | 'add' | 'mul' | 'div' | 'mod' | 'eql';
