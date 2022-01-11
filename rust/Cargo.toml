@@ -1,0 +1,12 @@
+[package]
+name = "advent_of_code"
+version = "0.1.0"
+edition = "2018"
+default-run  = "day-1"
+
+[dependencies]
+rand = "0.8.4"
+
+[[bin]]
+name = "day-1"
+path = "src/day-1/main.rs"
